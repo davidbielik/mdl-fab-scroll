@@ -1,0 +1,23 @@
+{
+  "name": "mdl-fab-scroll",
+  "version": "1.0.0",
+  "description": "Angular module to animate hide/show for MDL floating-action-buttons",
+  "main": "mdl-fab-scroll.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidbielik/mdl-fab-scroll.git"
+  },
+  "keywords": [
+    "mdl",
+    "angular"
+  ],
+  "author": "David Bielik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidbielik/mdl-fab-scroll/issues"
+  },
+  "homepage": "https://github.com/davidbielik/mdl-fab-scroll#readme"
+}
