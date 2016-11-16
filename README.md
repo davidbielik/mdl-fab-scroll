@@ -1,5 +1,5 @@
-# mdl-fab-scroll (<a href="http://codepen.io/davidbielik/pen/dpBdRb/">DEMO</a>)
-Angular module to animate hide/show for MDL floating-action-buttons
+# mdl-fab-scroll
+Angular module to animate hide/show for MDL floating-action-buttons [See a demo](http://codepen.io/davidbielik/pen/dpBdRb/)
 
 * Requires Angular and material-design-lite
 * Hides the floating action button (fab) when the user scrolls down
