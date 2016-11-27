@@ -11,15 +11,31 @@
 
             function init(){
                 $timeout(function(){
-                    var lastPosition;
+                    var lastPosition; // used to tell if user scrolled up or down
+                    var timeout; // timeout to show
+                    var position; // current position
                     var hideClass = 'mdl-fab-scroll-hide';
                     var container = document.querySelector('.mdl-layout__content');
                     container = angular.element(container);
                     container.on('scroll', function(event) {
-                        var position = event.target.scrollTop || 0;
-                        angular.element(document.body)[position > lastPosition ? 'addClass' : 'removeClass'](hideClass);
+                        position = event.target.scrollTop || 0;
+
+                        if (position > lastPosition){
+                            hide();
+                            $timeout(show, 2e3);
+                        } else {
+                            $timeout.cancel(timeout);
+                            show();
+                        }
                         lastPosition = position;
                     });
+
+                    function hide(){
+                        angular.element(document.body).addClass(hideClass);
+                    }
+                    function show(){
+                        angular.element(document.body).removeClass(hideClass);
+                    }
                 });
             }
         });
