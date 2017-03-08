@@ -51,6 +51,6 @@
 
 
     var css = document.createElement('style');
-    css.innerHTML = '.mdl-button--fab {transition-property: transform;}body.mdl-fab-scroll-hide .mdl-button--fab {animation: transform 3s;transform: scale(0,0) rotate(360deg)}';
+    css.innerHTML = '.mdl-fab-scroll {transition-property: transform;}body.mdl-fab-scroll-hide .mdl-fab-scroll {animation: transform 3s;transform: scale(0,0) rotate(360deg)}';
     document.body.appendChild(css);
 })();

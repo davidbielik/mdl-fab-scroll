@@ -1,6 +1,6 @@
 {
   "name": "mdl-fab-scroll",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Angular module to animate hide/show for MDL floating-action-buttons",
   "main": "mdl-fab-scroll.js",
   "scripts": {
