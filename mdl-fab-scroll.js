@@ -17,22 +17,17 @@
                     var hideClass = 'mdl-fab-scroll-hide';
                     var container = document.querySelector('.mdl-layout__content');
                     container = angular.element(container);
-                    container.on('scroll', function(event){
-                        $timeout.cancel(timeout);
-                        timeout = $timeout(function(){
-                            onScroll(event);
-                        });
-                    });
+                    container.on('scroll', onScroll);
 
                     function onScroll(event){
                         position = event.target.scrollTop || 0;
 
                         if (position >= lastPosition){
-                            hide();
+                            $timeout(hide);
                             $timeout(show, 2e3);
                         } else {
                             $timeout.cancel(timeout);
-                            show();
+                            $timeout(show);
                         }
                         lastPosition = position;
                     }
